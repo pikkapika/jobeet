@@ -5,7 +5,7 @@
   <head>
     <?php include_http_metas() ?>
     <?php include_metas() ?>
-    <title>Jobeet - Your best job board</title>
+    <title><?php include_slot('title', 'Jobeet - Your best job board') ?></title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_javascripts() ?>
     <?php include_stylesheets() ?>
@@ -14,8 +14,8 @@
     <div id="container">
       <div id="header">
         <div class="content">
-          <h1><a href="<?php echo url_for('job/index') ?>">
-            <img src="/images/logo.jpg" alt="Jobeet Job Board" />
+          <h1><a href="<?php echo url_for('homepage') ?>">
+            <img src="http://www.symfony-project.org/images/logo.jpg" alt="Jobeet Job Board" />
           </a></h1>
  
           <div id="sub_header">
