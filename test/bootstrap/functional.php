@@ -24,3 +24,9 @@ sfContext::createInstance($configuration);
 
 // remove all cache
 sfToolkit::clearDirectory(sfConfig::get('sf_app_cache_dir'));
+
+// added on day 8
+include(dirname(__FILE__).'/../../bootstrap/functional.php');
+ 
+$browser = new sfTestFunctional(new sfBrowser());
+Doctrine_Core::loadData(sfConfig::get('sf_test_dir').'/fixtures');

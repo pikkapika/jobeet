@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="1" errors="8" tests="19" assertions="19" skipped="0">
+  <testsuite name="sfTestFunctionalBase.class" file="/usr/lib/php/symfony/test/sfTestFunctionalBase.class.php" failures="1" errors="8" skipped="0" tests="4" assertions="4">
+    <testcase name="request parameter &quot;module&quot; is &quot;category&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;action&quot; is &quot;show&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;slug&quot; is &quot;programming&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="An uncaught exception has been thrown." file="/usr/lib/php/symfony/test/sfTestFunctionalBase.class.php" line="511" assertions="1">
+      <failure type="lime"/>
+    </testcase>
+  </testsuite>
+  <testsuite name="sfTestFunctionalBase.class" file="/usr/lib/php/symfony/test/sfTestFunctionalBase.class.php" failures="0" errors="0" skipped="0" tests="15" assertions="15">
+    <testcase name="request parameter &quot;module&quot; is &quot;job&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;action&quot; is &quot;index&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="response selector &quot;.jobs td.position:contains(&quot;expired&quot;)&quot; does not exist" file="/usr/lib/php/symfony/test/sfTesterResponse.class.php" line="85" assertions="1"/>
+    <testcase name="response selector &quot;.category_programming tr&quot; matches &quot;10&quot; times" file="/usr/lib/php/symfony/test/sfTesterResponse.class.php" line="93" assertions="1"/>
+    <testcase name="response selector &quot;.category_design .more_jobs&quot; does not exist" file="/usr/lib/php/symfony/test/sfTesterResponse.class.php" line="85" assertions="1"/>
+    <testcase name="response selector &quot;.category_programming .more_jobs&quot; exists" file="/usr/lib/php/symfony/test/sfTesterResponse.class.php" line="89" assertions="1"/>
+    <testcase name="response selector &quot;.category_programming tr:first a[href*=&quot;/881/&quot;]&quot; exists" file="/usr/lib/php/symfony/test/sfTesterResponse.class.php" line="89" assertions="1"/>
+    <testcase name="request parameter &quot;module&quot; is &quot;job&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;action&quot; is &quot;show&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;company_slug&quot; is &quot;company-123&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;location_slug&quot; is &quot;paris-france&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;position_slug&quot; is &quot;web-developer&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;id&quot; is &quot;881&quot;" file="/usr/lib/php/symfony/test/sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="status code is &quot;404&quot;" file="/usr/lib/php/symfony/test/sfTesterResponse.class.php" line="412" assertions="1"/>
+    <testcase name="status code is &quot;404&quot;" file="/usr/lib/php/symfony/test/sfTesterResponse.class.php" line="412" assertions="1"/>
+  </testsuite>
+</testsuites>
