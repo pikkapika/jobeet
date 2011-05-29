@@ -2,7 +2,7 @@
 <?php use_javascripts_for_form($form) ?>
 
 <div class="sf_admin_form">
-  <?php echo form_tag_for($form, '@jobeet_category_category') ?>
+  <?php echo form_tag_for($form, '@jobeet_category') ?>
     <?php echo $form->renderHiddenFields(false) ?>
 
     <?php if ($form->hasGlobalErrors()): ?>

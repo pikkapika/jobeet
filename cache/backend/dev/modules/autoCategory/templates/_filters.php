@@ -6,13 +6,13 @@
     <?php echo $form->renderGlobalErrors() ?>
   <?php endif; ?>
 
-  <form action="<?php echo url_for('jobeet_category_category_collection', array('action' => 'filter')) ?>" method="post">
+  <form action="<?php echo url_for('jobeet_category_collection', array('action' => 'filter')) ?>" method="post">
     <table cellspacing="0">
       <tfoot>
         <tr>
           <td colspan="2">
             <?php echo $form->renderHiddenFields() ?>
-            <?php echo link_to(__('Reset', array(), 'sf_admin'), 'jobeet_category_category_collection', array('action' => 'filter'), array('query_string' => '_reset', 'method' => 'post')) ?>
+            <?php echo link_to(__('Reset', array(), 'sf_admin'), 'jobeet_category_collection', array('action' => 'filter'), array('query_string' => '_reset', 'method' => 'post')) ?>
             <input type="submit" value="<?php echo __('Filter', array(), 'sf_admin') ?>" />
           </td>
         </tr>

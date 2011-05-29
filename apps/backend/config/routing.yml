@@ -7,8 +7,6 @@ jobeet_category:
     column:               id
     with_wildcard_routes: true
 
-
-
 jobeet_job:
   class: sfDoctrineRouteCollection
   options:

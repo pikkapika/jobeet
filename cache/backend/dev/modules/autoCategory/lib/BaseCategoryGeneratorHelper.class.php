@@ -12,6 +12,6 @@ abstract class BaseCategoryGeneratorHelper extends sfModelGeneratorHelper
 {
   public function getUrlForAction($action)
   {
-    return 'list' == $action ? 'jobeet_category_category' : 'jobeet_category_category_'.$action;
+    return 'list' == $action ? 'jobeet_category' : 'jobeet_category_'.$action;
   }
 }

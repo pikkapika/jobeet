@@ -55,7 +55,7 @@ abstract class autoCategoryActions extends sfActions
     {
       $this->setFilters($this->configuration->getFilterDefaults());
 
-      $this->redirect('@jobeet_category_category');
+      $this->redirect('@jobeet_category');
     }
 
     $this->filters = $this->configuration->getFilterForm($this->getFilters());
@@ -65,7 +65,7 @@ abstract class autoCategoryActions extends sfActions
     {
       $this->setFilters($this->filters->getValues());
 
-      $this->redirect('@jobeet_category_category');
+      $this->redirect('@jobeet_category');
     }
 
     $this->pager = $this->getPager();
@@ -117,71 +117,9 @@ abstract class autoCategoryActions extends sfActions
       $this->getUser()->setFlash('notice', 'The item was deleted successfully.');
     }
 
-    $this->redirect('@jobeet_category_category');
+    $this->redirect('@jobeet_category');
   }
 
-  public function executeBatch(sfWebRequest $request)
-  {
-    $request->checkCSRFProtection();
-
-    if (!$ids = $request->getParameter('ids'))
-    {
-      $this->getUser()->setFlash('error', 'You must at least select one item.');
-
-      $this->redirect('@jobeet_category_category');
-    }
-
-    if (!$action = $request->getParameter('batch_action'))
-    {
-      $this->getUser()->setFlash('error', 'You must select an action to execute on the selected items.');
-
-      $this->redirect('@jobeet_category_category');
-    }
-
-    if (!method_exists($this, $method = 'execute'.ucfirst($action)))
-    {
-      throw new InvalidArgumentException(sprintf('You must create a "%s" method for action "%s"', $method, $action));
-    }
-
-    if (!$this->getUser()->hasCredential($this->configuration->getCredentials($action)))
-    {
-      $this->forward(sfConfig::get('sf_secure_module'), sfConfig::get('sf_secure_action'));
-    }
-
-    $validator = new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'JobeetCategory'));
-    try
-    {
-      // validate ids
-      $ids = $validator->clean($ids);
-
-      // execute batch
-      $this->$method($request);
-    }
-    catch (sfValidatorError $e)
-    {
-      $this->getUser()->setFlash('error', 'A problem occurs when deleting the selected items as some items do not exist anymore.');
-    }
-
-    $this->redirect('@jobeet_category_category');
-  }
-
-  protected function executeBatchDelete(sfWebRequest $request)
-  {
-    $ids = $request->getParameter('ids');
-
-    $records = Doctrine_Query::create()
-      ->from('JobeetCategory')
-      ->whereIn('id', $ids)
-      ->execute();
-
-    foreach ($records as $record)
-    {
-      $record->delete();
-    }
-
-    $this->getUser()->setFlash('notice', 'The selected items have been deleted successfully.');
-    $this->redirect('@jobeet_category_category');
-  }
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
@@ -212,13 +150,13 @@ abstract class autoCategoryActions extends sfActions
       {
         $this->getUser()->setFlash('notice', $notice.' You can add another one below.');
 
-        $this->redirect('@jobeet_category_category_new');
+        $this->redirect('@jobeet_category_new');
       }
       else
       {
         $this->getUser()->setFlash('notice', $notice);
 
-        $this->redirect(array('sf_route' => 'jobeet_category_category_edit', 'sf_subject' => $jobeet_category));
+        $this->redirect(array('sf_route' => 'jobeet_category_edit', 'sf_subject' => $jobeet_category));
       }
     }
     else
