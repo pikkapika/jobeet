@@ -47,7 +47,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
 
   public function getListParams()
   {
-    return '%%is_activated%% <small>%%jobeet_category%%</small> - %%company%% (<em>%%email%%</em>) is looking for a %%=position%% (%%location%%) ';
+    return '%%is_activated%% <small>%%JobeetCategory%%</small> - %%company%% (<em>%%email%%</em>) is looking for a %%=position%% (%%location%%)';
   }
 
   public function getListLayout()
@@ -72,12 +72,12 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
 
   public function getFilterDisplay()
   {
-    return array();
+    return array(  0 => 'category_id',  1 => 'company',  2 => 'position',  3 => 'description',  4 => 'is_activated',  5 => 'is_public',  6 => 'email',  7 => 'expires_at',);
   }
 
   public function getFormDisplay()
   {
-    return array();
+    return array(  'Content' =>   array(    0 => 'category_id',    1 => 'type',    2 => 'company',    3 => 'logo',    4 => 'url',    5 => 'position',    6 => 'location',    7 => 'description',    8 => 'how_to_apply',    9 => 'is_public',    10 => 'email',  ),  'Admin' =>   array(    0 => '_generated_token',    1 => 'is_activated',    2 => 'expires_at',  ),);
   }
 
   public function getEditDisplay()
@@ -109,7 +109,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'description' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'how_to_apply' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'token' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'is_public' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Public?',  'help' => 'Whether the job can also be published on affiliate websites',  'or' => 'not',),
+      'is_public' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Public?',),
       'is_activated' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Activated?',  'help' => 'Whether the user has activated the job',  'or' => 'not',),
       'email' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'expires_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
@@ -241,7 +241,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
    */
   public function getFormClass()
   {
-    return 'JobeetJobForm';
+    return 'BackendJobeetJobForm';
   }
 
   public function hasFilterForm()
