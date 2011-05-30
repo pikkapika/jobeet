@@ -56,4 +56,5 @@ class jobActions extends autoJobActions
  
     $this->redirect('jobeet_job');
   }  
+  
 }
