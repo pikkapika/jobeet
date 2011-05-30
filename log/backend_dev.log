@@ -7892,3 +7892,260 @@ May 29 18:56:21 symfony [info] {sfWebDebugLogger} Partial "job/_list_batch_actio
 May 29 18:56:21 symfony [info] {sfWebDebugLogger} Partial "job/_list_actions" 23.82 ms (1)
 May 29 18:56:21 symfony [info] {sfWebDebugLogger} Partial "job/_list_footer" 3.60 ms (1)
 May 29 18:56:21 symfony [info] {sfWebResponse} Send content (178790 o)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+May 29 23:04:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 23:04:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 23:04:29 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 29 23:04:29 symfony [info] {sfBasicSecurityFilter} Action "job/index" requires authentication, forwarding to "sfGuardAuth/signin"
+May 29 23:04:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 23:04:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 23:04:29 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+May 29 23:04:29 symfony [info] {sfPHPView} Render "/Users/pika/tmp/symfony_test/jobeet/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+May 29 23:04:29 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+May 29 23:04:29 symfony [info] {sfPHPView} Decorate content with "/Users/pika/tmp/symfony_test/jobeet/apps/backend/templates/layout.php"
+May 29 23:04:29 symfony [info] {sfPHPView} Render "/Users/pika/tmp/symfony_test/jobeet/apps/backend/templates/layout.php"
+May 29 23:04:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+May 29 23:04:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 23:04:29 symfony [info] {sfWebDebugLogger} Configuration 489.72 ms (15)
+May 29 23:04:29 symfony [info] {sfWebDebugLogger} Factories 638.06 ms (1)
+May 29 23:04:29 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 31.53 ms (1)
+May 29 23:04:29 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 51.83 ms (1)
+May 29 23:04:29 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 16.04 ms (1)
+May 29 23:04:29 symfony [info] {sfWebResponse} Send content (39898 o)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+May 29 23:04:33 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/guard/login) for /guard/login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+May 29 23:04:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 23:04:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 23:04:33 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+May 29 23:04:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 29 23:04:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (fl, 1)
+May 29 23:04:33 symfony [info] {myUser} User is authenticated
+May 29 23:04:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (2)
+May 29 23:04:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (2)
+May 29 23:04:33 symfony [info] {myUser} Add credential(s) ""
+May 29 23:04:33 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE sf_guard_user SET last_login = ?, updated_at = ? WHERE id = ? - (2011-05-29 23:04:33, 2011-05-29 23:04:33, 2)
+May 29 23:04:33 symfony [info] {sfFrontWebController} Redirect to "http://www.jobeet.com.localhost/backend_dev.php/"
+May 29 23:04:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 29 23:04:33 symfony [info] {sfWebResponse} Send header "Location: http://www.jobeet.com.localhost/backend_dev.php/"
+May 29 23:04:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 23:04:33 symfony [info] {sfWebDebugLogger} Configuration 6.78 ms (8)
+May 29 23:04:33 symfony [info] {sfWebDebugLogger} Factories 96.36 ms (1)
+May 29 23:04:33 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 513.94 ms (1)
+May 29 23:04:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.29 ms (5)
+May 29 23:04:33 symfony [info] {sfWebResponse} Send content (119 o)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+May 29 23:04:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 23:04:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 23:04:34 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 29 23:04:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 23:04:34 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 23:04:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 29 23:04:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM (SELECT j.id FROM jobeet_job j LEFT JOIN jobeet_category j2 ON j.category_id = j2.id GROUP BY j.id) dctrn_count_query - ()
+May 29 23:04:34 symfony [info] {sfPHPView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/indexSuccess.php"
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_assets.php"
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_flashes.php"
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_header.php"
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_filters.php"
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+May 29 23:04:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.name AS j__name, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j.slug AS j__slug FROM jobeet_category j - ()
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+May 29 23:04:34 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_th_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_th_tabular.php"
+May 29 23:04:35 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_pagination.php"
+May 29 23:04:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at, j2.id AS j2__id, j2.name AS j2__name, j2.created_at AS j2__created_at, j2.updated_at AS j2__updated_at, j2.slug AS j2__slug FROM jobeet_job j LEFT JOIN jobeet_category j2 ON j.category_id = j2.id LIMIT 10 OFFSET 10 - ()
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_batch_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_actions.php"
+May 29 23:04:35 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoJob/templates/_list_footer.php"
+May 29 23:04:35 symfony [info] {sfPHPView} Decorate content with "/Users/pika/tmp/symfony_test/jobeet/apps/backend/templates/layout.php"
+May 29 23:04:35 symfony [info] {sfPHPView} Render "/Users/pika/tmp/symfony_test/jobeet/apps/backend/templates/layout.php"
+May 29 23:04:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_affiliate j WHERE j.is_active = ? - (0)
+May 29 23:04:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 23:04:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Configuration 8.39 ms (11)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Factories 101.52 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Action "job/index" 196.79 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.22 ms (5)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 1137.14 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_assets" 12.73 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_flashes" 4.18 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_header" 3.42 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_filters" 222.72 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_filters_field" 152.85 ms (8)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list" 712.24 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_th_stacked" 26.31 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_th_tabular" 21.18 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_pagination" 13.56 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_td_batch_actions" 46.20 ms (10)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_td_stacked" 168.29 ms (10)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_field_boolean" 40.75 ms (10)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_td_actions" 216.34 ms (10)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_batch_actions" 6.34 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_actions" 62.99 ms (1)
+May 29 23:04:35 symfony [info] {sfWebDebugLogger} Partial "job/_list_footer" 3.47 ms (1)
+May 29 23:04:36 symfony [info] {sfWebResponse} Send content (180183 o)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+May 29 23:04:38 symfony [info] {sfPatternRouting} Match route "jobeet_affiliate" (/affiliate.:sf_format) for /affiliate with parameters array (  'module' => 'affiliate',  'action' => 'index',  'sf_format' => 'html',)
+May 29 23:04:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 23:04:39 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 29 23:04:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 23:04:39 symfony [info] {affiliateActions} Call "affiliateActions->executeIndex()"
+May 29 23:04:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 29 23:04:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_affiliate j WHERE j.is_active = ? - (0)
+May 29 23:04:39 symfony [info] {sfPHPView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/indexSuccess.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_assets.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_flashes.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list_header.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_filters.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_filters_field.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_filters_field.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_filters_field.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list_th_tabular.php"
+May 29 23:04:39 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:39 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:39 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:39 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:39 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:39 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:39 symfony [info] {main} Set slot "sf_admin.current_header"
+May 29 23:04:39 symfony [info] {main} Get slot "sf_admin.current_header"
+May 29 23:04:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.url AS j__url, j.email AS j__email, j.token AS j__token, j.is_active AS j__is_active, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_affiliate j WHERE (j.is_active = ?) ORDER BY j.is_active asc LIMIT 20 - (0)
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list_td_batch_actions.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list_td_tabular.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list_field_boolean.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list_td_actions.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list_batch_actions.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list_actions.php"
+May 29 23:04:39 symfony [info] {sfPartialView} Render "/Users/pika/tmp/symfony_test/jobeet/cache/backend/dev/modules/autoAffiliate/templates/_list_footer.php"
+May 29 23:04:39 symfony [info] {sfPHPView} Decorate content with "/Users/pika/tmp/symfony_test/jobeet/apps/backend/templates/layout.php"
+May 29 23:04:39 symfony [info] {sfPHPView} Render "/Users/pika/tmp/symfony_test/jobeet/apps/backend/templates/layout.php"
+May 29 23:04:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM jobeet_affiliate j WHERE j.is_active = ? - (0)
+May 29 23:04:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 23:04:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Configuration 313.97 ms (12)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Factories 88.54 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Action "affiliate/index" 92.66 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.24 ms (4)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} View "Success" for "affiliate/index" 305.68 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_assets" 3.36 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_flashes" 3.61 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list_header" 3.30 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_filters" 70.48 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_filters_field" 34.48 ms (3)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list" 118.71 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list_th_tabular" 24.04 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list_td_batch_actions" 4.70 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list_td_tabular" 16.81 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list_field_boolean" 4.15 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list_td_actions" 24.57 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list_batch_actions" 9.30 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list_actions" 3.76 ms (1)
+May 29 23:04:39 symfony [info] {sfWebDebugLogger} Partial "affiliate/_list_footer" 4.14 ms (1)
+May 29 23:04:39 symfony [info] {sfWebResponse} Send content (80548 o)
